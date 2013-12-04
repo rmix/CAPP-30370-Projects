@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Java!</title>
+<style>
+.box {
+	height:150px;
+	width:150px;
+	background-color:blue;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Task 1 - Alert</h1>
+<button id="my_button">Alert</button>
+<script>
+  var myButton = document.getElementById('my_button');
+  myButton.addEventListener("click", function(){
+    alert('Alert!');
+  });  
+</script>
+
+<h1>Task 2 - How are you?</h1>
+<button id="my2_button">Hi!</button>
+<script>
+  var my2Button = document.getElementById('my2_button');
+  my2Button.addEventListener("click", function(){
+    var foo = prompt('How are you doing?');
+
+  for(i = 0; i < 5; i++) { // i = i + 1
+    console.log(foo);}
+    });
+</script>
+
+<h1>Task 3 - Colors of the Rainbow</h1>
+<script>
+	var rainbow_array = ['Red<br>', 'Orange<br>', 'Yellow<br>','Green<br>', 'Blue<br>', 'Indigo<br>', 'Violet<br>'];
+  	for(i = 0; i < rainbow_array.length; i++) {
+    document.write(rainbow_array[i]);
+    }
+</script>
+
+<h1>Task 4</h1>
+
+<div class="box" id="box"></div>
+
+<script>
+
+	var mybox = document.getElementById('box');
+	
+	mybox.addEventListener("mouseenter", function(){
+		console.log('Mouse is in the box!');
+	});
+	
+	mybox.addEventListener("mouseleave", function(){
+		console.log('Mouse left the box!');
+	});
+	
+</script>
+
+<h1>Task 5</h1>
+
+<input type="text" id="first"><br>
+<input type="text" id="second"><br>
+<button id="my3_button">Check</button>
+
+<script>
+  var my3Button = document.getElementById('my3_button');
+  my3Button.addEventListener("click", function(){
+  
+  var first = document.getElementById('first');
+  var second = document.getElementById('second');
+  
+  if(document.getElementById('first').value == document.getElementById('second').value){
+    alert('True!');
+  } else {
+    alert('False!');
+  }
+        
+  });
+  
+</script>
+
+
+</body>
+
+</html>

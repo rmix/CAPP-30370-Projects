@@ -1,0 +1,9 @@
+
+@media only screen and (min-width: 400px) {
+nav{ float: left; width:20%; border:1px solid black;}
+.section{ float: right; width:75%; border:1px solid black;}
+}
+
+@media only screen and (min-width: 800px) {
+img{ float: right;max-width: 40%; }
+}
